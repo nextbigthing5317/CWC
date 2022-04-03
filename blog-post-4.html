@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Telly Trends</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel = "icon" href = "/cwc/img/icon.png" sizes="20x20 40x40" type = "image/x-icon">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/Winwheel.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+<style>
+			.icon {
+  background: url('./img/media-1.jpg');
+  height: 40px;
+  width: 40px;
+  display: block;
+  /* Other styles here */
+}
+#Div2,#score,#ques,#wheel,#dishes{
+  display: none;
+}
+.qbutton[disabled] {
+          background-color: #00ff00;
+        }
+
+.item  {
+ float:left;
+  width:500px;
+  height:500px;
+  border:1px solid #d8dbdf;
+  background-color:#f4f4f4;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+font-size: 18px;
+  text-align:center;
+  line-height:500px;
+}
+td.the_wheel
+{
+    background-image: url(./img/CUISINE.png);
+    background-position: center;
+    background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+button {
+    display: inline-block;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+}
+
+#close-image img {
+    display: block;
+    height: 130px;  
+    width: 100px;
+}
+		</style>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header id="header">
+		<!-- NAV -->
+		<div id="nav">
+			<!-- Top Nav -->
+			<div id="nav-top">
+				<div class="container">
+					<!-- social -->
+					<!-- <ul class="nav-social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+					<!-- /social -->
+
+					<!-- logo -->
+					<div class="nav-logo">
+						<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+					</div>
+					<!-- /logo -->
+
+					<!-- search & aside toggle -->
+					<div class="nav-btns">
+						<button class="aside-btn"><i class="fa fa-bars"></i></button>
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+						<div id="nav-search">
+							<form>
+								<input class="input" placeholder="Enter your search...">
+							</form>
+							<button class="nav-close search-close">
+								<span></span>
+							</button>
+						</div>
+					</div>
+					<!-- /search & aside toggle -->
+				</div>
+			</div>
+			<!-- /Top Nav -->
+
+			<!-- Main Nav -->
+			<div id="nav-bottom">
+				<div class="container">
+					<!-- nav -->
+					<ul class="nav-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="has-dropdown">
+							<a href="cwc.html">Games</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="cwc.html">Cooku with Comali</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="has-dropdown">
+							<a href="category.html">Blogs</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+					<!-- /nav -->
+				</div>
+			</div>
+
+			<!-- /Main Nav -->
+
+			<!-- Aside Nav -->
+			<div id="nav-aside">
+				<ul class="nav-aside-menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="has-dropdown"><a>Games</a>
+						<ul class="dropdown">
+							<li><a href="cwc.html">Cooku with Comali</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown"><a>Blogs</a>
+						<ul class="dropdown">
+							<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms and Conditions</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+				<button class="nav-close nav-aside-close"><span></span></button>
+			</div>
+			<!-- /Aside Nav -->
+		</div>
+		<!-- /NAV -->
+
+		<!-- PAGE HEADER -->
+		<div id="post-header" class="page-header">
+			<div class="page-header-bg" style="background-image: url('./img/banner/tv.png');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="post-category">
+							<a href="category.html?filter=channel">Channels</a>
+						</div>
+						<h1>Top 10 channels with highest TRP</h1>
+						<ul class="post-meta">
+							<li>13 March 2022</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8">
+					<!-- post share -->
+					<div class="section-row">
+						<!-- <div class="post-share">
+							<a href="#" class="social-facebook"><i class="fa fa-facebook"></i><span>Share</span></a>
+							<a href="#" class="social-twitter"><i class="fa fa-twitter"></i><span>Tweet</span></a>
+							<a href="#" class="social-pinterest"><i class="fa fa-pinterest"></i><span>Pin</span></a>
+							<a href="#" ><i class="fa fa-envelope"></i><span>Email</span></a>
+						</div> -->
+					</div>
+					<!-- /post share -->
+<!-- post content -->
+				    	<div class="section-row">
+
+					    <p style="text-align: justify;">
+							TRP also known as Television Rating point shows what percentage of target audience views the program. TRP is very important for a channel because if the TRP is high it simply indicates that many people watch the show. If many people watch a particular show on a channel, the advertisers would be willing to pay more for the show. So the channel with a higher TRP naturally will be successful. Here we have analyzed and brought you the top 10 channels which have the highest TRP in India. So grab on your popcorn and travel with us to find out the channel with the highest TRP.
+
+							Here the numbers like 1466.7 mean the Average Minute Audience. Here AMA is calculated as per weekly basis.
+							
+						</p><br><br> 
+
+						<h2>10) Sony Pal -1459.42 AMA:</h2><br>
+						<p style="text-align: justify;">
+							Sony Pictures Network owns this channel. Sony Pal is a free channel and it was initially aimed to be women-centric, but now is showing shows related to women and families. Some of the famous shows of Sony Pal are CID, Taarak Mehta Ka Ooltah Chashmah, Adaalat, Aahat, Chidiya Ghar, etc.
+						</p><br><br> 
+	
+						<h2>9) Zee TV - 1466.37 AMA:</h2><br>
+						<p style="text-align: justify;">
+							Zee Tv was founded in the year 1950. Zee Tv is the first channel in our country to be owned privately. It is owned by Indian Billionaire Subash Chandra Goenka.It has famous shows like Kundali Bhagya,Kumkum Bhagya, Apna time bhi aayega,Bhagya Lakshmi,etc.
+						</p><br><br>
+
+						<h2>8) SONY SAB- 1501.66 AMA:</h2><br>
+						<p style="text-align: justify;">
+							Sony SAB was launched by Gautam Adhikari and Markand Adhikari on April 1993.Sony sab is a Hindi comedy channel owned by sony corporation. The famous shows of Sony Sab are Taarak Mehta Ka Ooltah Chasmah, Ziddi Dil Maane Na, FIR, Tera Yaar Hoon Main,etc.
+						</p><br><br>
+	
+						 <h2>7) Colors - 1505.99 AMA:</h2><br> 
+						 <p style="text-align: justify;">
+							Colors channel is owned by Viacom 18. Colors channel has a mixture of varieties like dramas, reality shows, comedy shows, etc. The famous shows of colors channel are Udaariyan, Naagin, Parineetii, Bigg Boss,etc.
+						</p><br><br>
+
+						<h2>6) STAR Vijay - 1635.27 AMA:</h2><br>
+						<p style="text-align: justify;">
+							Star Vijay, famously known as Vijay Tv is one of the most famous channels in Tamil Nadu. It is currently owned by the Walt Disney Company India. The most famous shows on Vijay TV are Neeya Naana, Bigg Boss, Kalakka Povathu Yaaru, Pandian Stores,etc. Many famous silver screen celebrities of Tamil have come from Vijay tv.
+						</p><br><br> 
+	
+						<h2>5) Dhinchaak - 1787.83 AMA:</h2><br>
+						<p style="text-align: justify;">
+							Dhinchaak channel was founded by Manish Shah in the year 2020. Dhinchaak TV is a Hindi channel that features many popular Hindi movies. It is owned by Goldmines Telefilms.It features many popular shows to keep people entertained.
+						</p><br><br>
+
+						<h2>4) STAR Utsav - 2317.24 AMA:</h2><br>
+						<p style="text-align: justify;">
+							Star Utsav is another popular Hindi channel coming under the star family. Star Plus was rebranded to Star Utsav in January 2021 and in some countries like the UK it became Utsav Plus. It features famous shows like Anupamaa, Imlie, Ghum Hai Kisikey Pyaar Meiin, Diya Aur Baati Hum,etc.
+						</p><br><br>
+	
+						 <h2>3) STAR Plus - 2380.09 AMA:</h2><br> 
+						 <p style="text-align: justify;">
+							Star plus is a Hindi entertainment channel, like Star Vijay it is also owned by Walt Disney. It features dramas, comedies and youth-oriented reality shows. It featured some famous shows like Ramayan, Kyunki Saas Bhi Kabhi Bahu Thi, Pandya Store,etc.
+						</p><br><br>
+	
+						<h2>2) STAR Maa -2387.79 AMA: </h2><br>
+						<p style="text-align: justify;">
+							Star Maa is a Telugu entertainment channel coming under the star family. It was previously known as Maa TV and later it was bought by a star. It has many popular shows like Karthika Deepam, Guppedantha Manasu, Intinti Gruhalakshmi, Janaki Kalaganaledu, Bigg Boss Telugu,etc.
+						</p><br><br>
+	
+						<h2>1) Sun TV -2483.04 AMA:</h2><br> 
+						<p style="text-align: justify;">
+							Sun tv is India's top television channel. It is a Tamil channel owned by Kalanithi Maran. It has popular shows like Sundari, Kannana Kanne, Roja, Kayal, Vanathai Pola etc. Sun TV was very popular right from the 90’s. All the shows from morning to evening are very standard and entertaining.
+						</p><br><br>
+
+					    </div>
+					<!-- /post content -->
+
+				</div>
+				<div class="col-md-4">
+					<!-- ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-3.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /ad widget -->
+
+					<!-- category widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2 class="title">Categories</h2>
+						</div>
+						<div class="category-widget">
+							<ul>
+								<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+								<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+								<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+								<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+								<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /category widget -->
+
+				<!-- post widget -->
+				<div class="aside-widget">
+					<div class="section-title">
+						<h2 class="title">Popular Posts</h2>
+					</div>
+					<!-- post -->
+					<div class="post post-widget">
+						<a class="post-img" href="blog-post-2.html"><img src="./img/popular1.png" alt=""></a>
+						<div class="post-body">
+							<div class="post-category">
+								<a href="category.html?filter=tv">TV Shows</a>
+							</div>
+							<h3 class="post-title"><a href="blog-post-2.html">Popular Tv Shows in Tamil</a></h3>
+						</div>
+					</div>
+					<!-- /post -->
+
+					<!-- post -->
+					<div class="post post-widget">
+						<a class="post-img" href="blog-post-9.html"><img src="./img/popular2.png" alt=""></a>
+						<div class="post-body">
+							<div class="post-category">
+								<a href="category.html?filter=90kids">90's Kids</a>
+							</div>
+							<h3 class="post-title"><a href="blog-post-9.html">Top 10 Tamil Shows of 90's Kids</a></h3>
+						</div>
+					</div>
+					<!-- /post -->
+
+					<!-- post -->
+					<div class="post post-widget">
+						<a class="post-img" href="blog-post-1.html"><img src="./img/popular3.png" alt=""></a>
+						<div class="post-body">
+							<div class="post-category">
+								<a href="category.html?filter=tv">TV Shows</a>
+							</div>
+							<h3 class="post-title"><a href="blog-post-1.html">Unknown Facts about Cooku With Comali</a></h3>
+						</div>
+					</div>
+					<!-- /post -->
+
+					<!-- post -->
+					<div class="post post-widget">
+						<a class="post-img" href="blog-post-7.html"><img src="./img/popular4.png" alt=""></a>
+						<div class="post-body">
+							<div class="post-category">
+								<a href="category.html?filter=serials">Serials</a>
+							</div>
+							<h3 class="post-title"><a href="blog-post-7.html">Top 10 Serials on Zee TV</a></h3>
+						</div>
+					</div>
+					<!-- /post -->
+				</div>
+				<!-- /post widget -->
+
+					<!-- Ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-1.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /Ad widget -->
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+<!-- FOOTER -->
+<footer id="footer">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<div class="footer-logo">
+						<a href="index.html" class="logo"><img src="./img/footer_logo.png" style="height:80px;width: 200px;" alt=""></a>
+					</div>
+					<p>Your one-stop destination for television facts, games and a lot more to keep you entertained and let the fun times roll. </p>
+					<!-- <ul class="contact-social">
+						<li><a href="#" class="social-facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="social-google-plus"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Categories</h3>
+					<div class="category-widget">
+						<ul>
+							<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+							<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+							<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+							<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+							<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Tags</h3>
+					<div class="tags-widget">
+						#onlineentertainment #CWC #CookwithComali #Blogs #Entertainment #Games  #Tamil #TVChannels #TVShows #tamil television trp ratings #TV channel list # tv shows games online #tv shows games #tv shows games for android #tv games shows 2021 #tv games shows 2020 #tv games shows 2022 #game shows tv shows #reality tv shows games #tv shows video games #games in tv shows
+						<!-- <ul>
+							<li><a href="#">Social</a></li>
+							<li><a href="#">Lifestyle</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Technology</a></li>
+							<li><a href="#">Fashion</a></li>
+							<li><a href="#">Life</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Magazine</a></li>
+							<li><a href="#">Food</a></li>
+							<li><a href="#">Health</a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Pages</h3>
+					<div class="tags-widget">
+						<ul>
+							<li><a href="index.html">Home</a></li><br>
+							<li><a href="about.html">About Us</a></li><br>
+							<li><a href="contact.html">Contacts</a></li><br>
+							<li><a href="privacy_policy.html">Privacy Policy</a></li><br>
+							<li><a href="Terms.html">Terms</a></li><br>
+							<li><a href="disclaimer.html">Disclaimer</a></li>
+						</ul>
+					</div>
+					<!-- <h3 class="footer-title">Newsletter</h3>
+					<div class="newsletter-widget">
+						<form>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+							<input class="input" name="newsletter" placeholder="Enter Your Email">
+							<button class="primary-button">Subscribe</button>
+						</form>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+
+		<!-- row -->
+		<div class="footer-bottom row">
+			<div class="col-md-6 col-md-push-6">
+				<ul class="footer-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-md-pull-6">
+				<div class="footer-copyright">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</footer>
+<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
+

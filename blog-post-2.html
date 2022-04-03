@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Telly Trends</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel = "icon" href = "/cwc/img/icon.png" sizes="20x20 40x40" type = "image/x-icon">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/Winwheel.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+<style>
+			.icon {
+  background: url('./img/media-1.jpg');
+  height: 40px;
+  width: 40px;
+  display: block;
+  /* Other styles here */
+}
+#Div2,#score,#ques,#wheel,#dishes{
+  display: none;
+}
+.qbutton[disabled] {
+          background-color: #00ff00;
+        }
+
+.item  {
+ float:left;
+  width:500px;
+  height:500px;
+  border:1px solid #d8dbdf;
+  background-color:#f4f4f4;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+font-size: 18px;
+  text-align:center;
+  line-height:500px;
+}
+td.the_wheel
+{
+    background-image: url(./img/CUISINE.png);
+    background-position: center;
+    background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+button {
+    display: inline-block;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+}
+
+#close-image img {
+    display: block;
+    height: 130px;  
+    width: 100px;
+}
+		</style>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header id="header">
+		<!-- NAV -->
+		<div id="nav">
+			<!-- Top Nav -->
+			<div id="nav-top">
+				<div class="container">
+					<!-- social -->
+					<!-- <ul class="nav-social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+					<!-- /social -->
+
+					<!-- logo -->
+					<div class="nav-logo">
+						<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+					</div>
+					<!-- /logo -->
+
+					<!-- search & aside toggle -->
+					<div class="nav-btns">
+						<button class="aside-btn"><i class="fa fa-bars"></i></button>
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+						<div id="nav-search">
+							<form>
+								<input class="input" placeholder="Enter your search...">
+							</form>
+							<button class="nav-close search-close">
+								<span></span>
+							</button>
+						</div>
+					</div>
+					<!-- /search & aside toggle -->
+				</div>
+			</div>
+			<!-- /Top Nav -->
+
+			<!-- Main Nav -->
+			<div id="nav-bottom">
+				<div class="container">
+					<!-- nav -->
+					<ul class="nav-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="has-dropdown">
+							<a href="cwc.html">Games</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="cwc.html">Cooku with Comali</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="has-dropdown">
+							<a href="category.html">Blogs</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+					<!-- /nav -->
+				</div>
+			</div>
+
+			<!-- /Main Nav -->
+
+			<!-- Aside Nav -->
+			<div id="nav-aside">
+				<ul class="nav-aside-menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="has-dropdown"><a>Games</a>
+						<ul class="dropdown">
+							<li><a href="cwc.html">Cooku with Comali</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown"><a>Blogs</a>
+						<ul class="dropdown">
+							<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms and Conditions</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+				<button class="nav-close nav-aside-close"><span></span></button>
+			</div>
+			<!-- /Aside Nav -->
+		</div>
+		<!-- /NAV -->
+
+		<!-- PAGE HEADER -->
+		<div id="post-header" class="page-header">
+			<div class="page-header-bg" style="background-image: url('./img/banner/show.png');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="post-category">
+							<a href="category.html?filter=tv">TV Shows</a>
+						</div>
+						<h1>Popular TV Shows in Tamil
+						</h1>
+						<ul class="post-meta">
+							<li>17 March 2022</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8">
+					<!-- post share -->
+					<div class="section-row">
+						<!-- <div class="post-share">
+							<a href="#" class="social-facebook"><i class="fa fa-facebook"></i><span>Share</span></a>
+							<a href="#" class="social-twitter"><i class="fa fa-twitter"></i><span>Tweet</span></a>
+							<a href="#" class="social-pinterest"><i class="fa fa-pinterest"></i><span>Pin</span></a>
+							<a href="#" ><i class="fa fa-envelope"></i><span>Email</span></a>
+						</div> -->
+					</div>
+					<!-- /post share -->
+<!-- post content -->
+					<div class="section-row">
+						<!-- Blog post -->
+
+						<p style="text-align: justify;">A person without Humour is like Baai veetu kalyanam without Biriyani. In Today’s trend, Humour is everything that keeps us motivating and stress-free. Even we couldn’t imagine a life without fun. Most of our happy times are captured with our favorite TV shows. In this blog, I will list the popular TV shows in Tamil in recent times.</p><br><br>
+
+<h2>1)Cook With Comali</h2><br>
+<br>
+<center><img src="img/TVShows/1.png" style="height:300px;width: 350px;"></center><br>
+<p style="text-align: justify;">One of the super-duper hit shows of Tamil is Cook With Comali. Vijay TV already hosted many cookery shows but this was a massive hit among the audience. This show hooks up an interesting idea of adding a good dose of comedy to cooking. Comali’s like Pugazh, Bala, Manimegalai, Sunitha, and Shivangi are the pillars of the show. Celebrities who were part of this show are now shining on silver screens with great responses. There is no doubt that this show will keep entertaining us in the upcoming seasons too.</p><br><br>
+
+<h2>2)Bigg boss</h2><br> 
+<br>
+<center><img src="img/TVShows/2.png" style="height:300px;width: 350px;"></center><br>
+<p style="text-align: justify;">Nowadays, everywhere the Hot topic is about the Bigg boss and its contestants. Colorful house, Energetic task, Favourite celebrities, Different Personalities, Varied emotions, and whatnot, this show has everything to keep us engaging even for the whole day. Kamal Hassan was the biggest backbone of this show, his speech and swag are out of the world. This man steals everyone’s heart even in his 60’s. It is also creating many positive impacts in people's life by analyzing different persons in the house. And it is a life-changing platform for the participants of the house. It provides the needed limelight for them. Overall, it is a complete pack of everything.</p><br><br>
+
+
+<h2>3)Survivor</h2><br>
+<br>
+<center><img src="img/TVShows/3.png" style="height:300px;width: 350px;"></center><br>
+<p style="text-align: justify;">As the name says, Surviving is one of the toughest jobs in this show. The participants are left in a deserted island  where all the necessities like fire, shelter, food and water have to be found by the participants themselves. Though this show is produced in more than 25 countries and became a massive hit, here it is not as successful as bigg boss. But many have gone crazy for the task of this show which make the audience to sit in the edge of the seat. This show also shown the other side of action king Arjun as a host. Though it is not popular as bigg boss, it has also gained moderate success among the public.</p><br><br>
+
+<h2>4)Start Music</h2><br>
+<br>
+<center><img src="img/TVShows/4.png" style="height:300px;width: 350px;"></center><br>
+
+<p style="text-align: justify;">Another stress buster show next to CWC is Star Music. No doubt, that this show is nothing without our darling anchor Priyanka Despande. The way she carry the show is just treat for the audience. With her humour sense and timing comedy, she has taken this show to the another level. Dj black’s timely counter music and Singers Ajay krishna and Srisha singing adds more spice to the show. Also our favourite stars take us on a roller coaster of music, fun and lots of entertainment.</p><br><br>
+
+
+<h2>5)Super Singer</h2><br>
+<br>
+<center><img src="img/TVShows/5.png" style="height:300px;width: 350px;"></center><br>
+
+<p style="text-align: justify;">Another Fun musical show is Super Singer. Both Super singer juniors and Super singer seniors are entertaining with our kalakkal anchors Makapa and Prio. Their chemistry and sink was the major reason for the success of this show apart from Singing. Judges are also good entertainers. Every week it has unique themes of rounds to enter the audience. Overall, this show is like watching a feel good movie.</p><br><br>
+
+<h2>6)Master Chef Tamil</h2><br>
+<br>
+<center><img src="img/TVShows/6.png" style="height:300px;width: 350px;"></center><br>
+
+<p style="text-align: justify;">Master Chef Tamil is completely a serious cookery show involving great chefs of Tamilnadu. Enduring many hurdles the contestants are expected to give a mouth watering unique dishes which is a treat for our eyes. Vijay Sethupathi is yet another reason for people to watch this show. Judges articulate their criticisms very well which mostly relates with our thoughts. It not just entertaining it also inspires people who are just  everyday cooks realize their dream to become a master chef.</p><br><br> 
+
+<h2>7)Neeya Naana</h2><br>
+<br>
+<center><img src="img/TVShows/7.png" style="height:300px;width: 350px;"></center><br>
+
+<p style="text-align: justify;">Only fews shows last for many years, one among them is “Neeya Naana”. We can never think of any hosts other than Gopinath. His clarity in Speech, knowledge about every current affairs are the highlights of the show. Topic of every debate topic is different and thought provoking to the society. This show is just the reflection of our current society.</p><br><br> 
+
+<h2>8)Kalaka Povathu Yaaru</h2><br>
+<br>
+<center><img src="img/TVShows/8.png" style="height:300px;width: 350px;"></center><br>
+
+<p style="text-align: justify;">Kalakka povathu yaaru is a very famous comedy show in Vijay Tv. This show is the starting is the starting point for many sucessful actors like Sivakarthikeyan, Robo Shankar, Ramar and the list continues. The participants would be very tallented and exhibit great humour skills. The show has inspired young talents who get the very deserving platform to exhibit their talent to the world.</p><br><br>   
+
+<h2>9)Super Queen</h2><br>
+<br>
+<center><img src="img/TVShows/9.png" style="height:300px;width: 350px;"></center><br>
+
+<p style="text-align: justify;">As the name says, it is show for Queens in the Media. It features twelve cini actresses who will be given series of interesting tasks and challenges. The tasks would be so tricky and entertaining and many times it would bring their real face to the viewers.</p><br><br>
+
+<h2>10)Solvethellam Unmai</h2><br>
+<br>
+<center><img src="img/TVShows/10.png" style="height:300px;width: 350px;"></center><br>
+
+<p style="text-align: justify;">One of the controversial talk shows is “Solvethellam Unmai”. It aims to solve the family issues with moderator as Lakshmy Ramakrishnan. Sudha Chandran and Nirmala Periyasamy also hosted this show, but it is not popular as hosted by Lakshmu ramakrishnan. We can mixed reviews for this show from the audience, but it one of the successful shows on Zee Tamil TV so far. Though it has negative reviews, it is the saviour for many people who are struggling in the society. It solved many issues and disputes in the family.</p><br><br>
+
+					</div>
+					<!-- /post content -->
+
+				</div>
+				<div class="col-md-4">
+					<!-- ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-3.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /ad widget -->
+
+					<!-- category widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2 class="title">Categories</h2>
+						</div>
+						<div class="category-widget">
+							<ul>
+								<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+								<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+								<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+								<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+								<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /category widget -->
+
+					<!-- post widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2 class="title">Popular Posts</h2>
+						</div>
+						<!-- post -->
+						<div class="post post-widget">
+							<a class="post-img" href="blog-post-2.html"><img src="./img/popular1.png" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="category.html?filter=tv">TV Shows</a>
+								</div>
+								<h3 class="post-title"><a href="blog-post-2.html">Popular Tv Shows in Tamil</a></h3>
+							</div>
+						</div>
+						<!-- /post -->
+
+						<!-- post -->
+						<div class="post post-widget">
+							<a class="post-img" href="blog-post-9.html"><img src="./img/popular2.png" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="category.html?filter=90kids">90's Kids</a>
+								</div>
+								<h3 class="post-title"><a href="blog-post-9.html">Top 10 Tamil Shows of 90's Kids</a></h3>
+							</div>
+						</div>
+						<!-- /post -->
+
+						<!-- post -->
+						<div class="post post-widget">
+							<a class="post-img" href="blog-post-1.html"><img src="./img/popular3.png" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="category.html?filter=tv">TV Shows</a>
+								</div>
+								<h3 class="post-title"><a href="blog-post-1.html">Unknown Facts about Cooku With Comali</a></h3>
+							</div>
+						</div>
+						<!-- /post -->
+
+						<!-- post -->
+						<div class="post post-widget">
+							<a class="post-img" href="blog-post-7.html"><img src="./img/popular4.png" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="category.html?filter=serials">Serials</a>
+								</div>
+								<h3 class="post-title"><a href="blog-post-7.html">Top 10 Serials on Zee TV</a></h3>
+							</div>
+						</div>
+						<!-- /post -->
+					</div>
+					<!-- /post widget -->
+
+					<!-- Ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-1.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /Ad widget -->
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+<!-- FOOTER -->
+<footer id="footer">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<div class="footer-logo">
+						<a href="index.html" class="logo"><img src="./img/footer_logo.png" style="height:80px;width: 200px;" alt=""></a>
+					</div>
+					<p>Your one-stop destination for television facts, games and a lot more to keep you entertained and let the fun times roll. </p>
+					<!-- <ul class="contact-social">
+						<li><a href="#" class="social-facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="social-google-plus"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Categories</h3>
+					<div class="category-widget">
+						<ul>
+							<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+							<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+							<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+							<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+							<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Tags</h3>
+					<div class="tags-widget">
+						#onlineentertainment #CWC #CookwithComali #Blogs #Entertainment #Games  #Tamil #TVChannels #TVShows #tamil television trp ratings #TV channel list # tv shows games online #tv shows games #tv shows games for android #tv games shows 2021 #tv games shows 2020 #tv games shows 2022 #game shows tv shows #reality tv shows games #tv shows video games #games in tv shows
+						<!-- <ul>
+							<li><a href="#">Social</a></li>
+							<li><a href="#">Lifestyle</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Technology</a></li>
+							<li><a href="#">Fashion</a></li>
+							<li><a href="#">Life</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Magazine</a></li>
+							<li><a href="#">Food</a></li>
+							<li><a href="#">Health</a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Pages</h3>
+					<div class="tags-widget">
+						<ul>
+							<li><a href="index.html">Home</a></li><br>
+							<li><a href="about.html">About Us</a></li><br>
+							<li><a href="contact.html">Contacts</a></li><br>
+							<li><a href="privacy_policy.html">Privacy Policy</a></li><br>
+							<li><a href="Terms.html">Terms</a></li><br>
+							<li><a href="disclaimer.html">Disclaimer</a></li>
+						</ul>
+					</div>
+					<!-- <h3 class="footer-title">Newsletter</h3>
+					<div class="newsletter-widget">
+						<form>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+							<input class="input" name="newsletter" placeholder="Enter Your Email">
+							<button class="primary-button">Subscribe</button>
+						</form>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+
+		<!-- row -->
+		<div class="footer-bottom row">
+			<div class="col-md-6 col-md-push-6">
+				<ul class="footer-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-md-pull-6">
+				<div class="footer-copyright">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</footer>
+<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
+

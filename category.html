@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Telly Trends</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel = "icon" href = "/cwc/img/icon.png" sizes="20x20 40x40" type = "image/x-icon">
+	
+<style>
+	.show {
+  display: block;
+}
+.col-md-6
+{
+	display: none;
+}
+/* Style the buttons */
+
+/* .btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+} */
+
+.btn {
+text-transform: uppercase;
+ /* display: block; */
+ padding: 10px 15px;
+ font-size: 12px;
+ font-weight: 700;
+ color: #97989b;
+ background-color: #323335;
+ /* border-radius: 2px; */
+ -webkit-transition: 0.2s all;
+ transition: 0.2s all;
+ display:inline-block;
+}
+
+.btn:hover, .btn:focus, .btn.active {
+/* color: #fff !important; */
+background-color: #ee7700;
+}
+
+</style>	
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header id="header">
+		<!-- NAV -->
+		<div id="nav">
+			<!-- Top Nav -->
+			<div id="nav-top">
+				<div class="container">
+					<!-- social -->
+					<!-- <ul class="nav-social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+					<!-- /social -->
+
+					<!-- logo -->
+					<div class="nav-logo">
+						<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+					</div>
+					<!-- /logo -->
+
+					<!-- search & aside toggle -->
+					<div class="nav-btns">
+						<button class="aside-btn"><i class="fa fa-bars"></i></button>
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+						<div id="nav-search">
+							<form>
+								<input class="input" placeholder="Enter your search...">
+							</form>
+							<button class="nav-close search-close">
+								<span></span>
+							</button>
+						</div>
+					</div>
+					<!-- /search & aside toggle -->
+				</div>
+			</div>
+			<!-- /Top Nav -->
+
+			<!-- Main Nav -->
+			<div id="nav-bottom">
+				<div class="container">
+					<!-- nav -->
+					<ul class="nav-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="has-dropdown">
+							<a href="cwc.html">Games</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="cwc.html">Cooku with Comali</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="has-dropdown">
+							<a href="category.html">Blogs</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+					<!-- /nav -->
+				</div>
+			</div>
+
+			<!-- /Main Nav -->
+
+			<!-- Aside Nav -->
+			<div id="nav-aside">
+				<ul class="nav-aside-menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="has-dropdown"><a>Games</a>
+						<ul class="dropdown">
+							<li><a href="cwc.html">Cooku with Comali</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown"><a>Blogs</a>
+						<ul class="dropdown">
+							<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms and Conditions</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+				<button class="nav-close nav-aside-close"><span></span></button>
+			</div>
+			<!-- /Aside Nav -->
+		</div>
+		<!-- /NAV -->
+
+		<!-- PAGE HEADER -->
+		<div id="post-header" class="page-header">
+			<div class="page-header-bg" style="background-image: url('./img/banner/plain.png');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="post-category">
+						</div>
+						<h1>Pick out your interests from our exclusive set of categories!</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8">
+					<!-- post share -->
+					<div class="section-row">
+					</div>
+					<!-- /post share -->
+					<!-- post content -->
+					<div class="section-row">
+						<center>
+						<div id="myBtnContainer">
+							<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+							<button class="btn" onclick="filterSelection('tv')"> TV Shows</button>
+							<button class="btn" onclick="filterSelection('channel')"> Channels</button>
+							<button class="btn" onclick="filterSelection('serials')"> Serials</button>
+							<button class="btn" onclick="filterSelection('90kids')"> 90's Kids</button>
+							<button class="btn" onclick="filterSelection('cinema')"> Cinema</button>
+						  </div>
+						</center>  
+						  <br><br>
+						<!-- Blog post 1-->
+                        <div class="col-md-6 tv">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-1.html"><img src="./img/popular3.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('tv')">Tv Shows</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-1.html">Unknown facts about CWC</a></h3>
+                                    <ul class="post-meta">
+                                        <li>10 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 1-->
+
+						<!-- Blog post 2-->
+                        <div class="col-md-6 tv">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-2.html"><img src="./img/popular1.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('tv')">Tv Shows</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-2.html">Popular TV shows in Tamil</a></h3>
+                                    <ul class="post-meta">
+                                        <li>17 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 2-->
+
+						<!-- Blog post 3-->
+                        <div class="col-md-6 tv">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-3.html"><img src="./img/recent1.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('tv')">Tv Shows</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-3.html">Unknown Facts about Tamil Bigg boss</a></h3>
+                                    <ul class="post-meta">
+                                        <li>23 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 3-->
+
+
+						<!-- Blog post 4-->
+                        <div class="col-md-6 channel">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-4.html"><img src="./img/recent2.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('channel')">Channel</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-4.html">Top 10 channels with highest TRP</a></h3>
+                                    <ul class="post-meta">
+                                        <li>13 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 4-->
+
+
+						<!-- Blog post 5-->
+                        <div class="col-md-6 serials">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-5.html"><img src="./img/recent4.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('serials')">Serials</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-5.html">Top 10 serials on Sun TV</a></h3>
+                                    <ul class="post-meta">
+                                        <li>3 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 5-->
+
+
+						<!-- Blog post 6-->
+                        <div class="col-md-6 serials">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-6.html"><img src="./img/recent3.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('serials')">Serials</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-6.html">Top 6 serials on Vijay TV</a></h3>
+                                    <ul class="post-meta">
+                                        <li>5 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 6-->
+
+
+						<!-- Blog post 7-->
+                        <div class="col-md-6 serials">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-7.html"><img src="./img/popular4.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('serials')">Serials</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-7.html">Top 10 serials on Zee TV</a></h3>
+                                    <ul class="post-meta">
+                                        <li>15 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 7-->
+
+
+						<!-- Blog post 8-->
+                        <div class="col-md-6 90kids">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-8.html"><img src="./img/hotpost1.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('90kids')">90's Kids</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-8.html">Best cartoons of 90’s kids</a></h3>
+                                    <ul class="post-meta">
+                                        <li>1 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 8-->
+
+
+						<!-- Blog post 9-->
+                        <div class="col-md-6 90kids">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-9.html"><img src="./img/popular2.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('90kids')">90's Kids</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-9.html">Top 10 Tamil shows of 90’s kids</a></h3>
+                                    <ul class="post-meta">
+                                        <li>25 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 9-->
+
+
+						<!-- Blog post 10-->
+                        <div class="col-md-6 cinema">
+                            <div class="post" >
+                                <a class="post-img" href="blog-post-10.html"><img src="./img/hotpost3.png" alt=""></a>
+                                <div class="post-body">
+                                    <div class="post-category">
+                                        <a href="javascript: void(0)" onclick="filterSelection('cinema')">Cinema</a>
+                                    </div>
+                                    <h3 class="post-title"><a href="blog-post-10.html">TV personality turned Actor/Actress</a></h3>
+                                    <ul class="post-meta">
+                                        <li>12 March 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Blog post 10-->
+
+					</div>
+					<!-- /post content -->
+
+				</div>
+				<div class="col-md-4">
+					<!-- ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-3.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /ad widget -->
+
+					<!-- category widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2 class="title">Categories</h2>
+						</div>
+						<div class="category-widget">
+							<ul>
+								<li><a href="javascript: void(0)" onclick="filterSelection('tv')"> Tv Shows <span>3</span></a></li>
+								<li><a href="javascript: void(0)" onclick="filterSelection('channel')">Channels <span>1</span></a></li>
+								<li><a href="javascript: void(0)" onclick="filterSelection('serials')">Serials <span>3</span></a></li>
+								<li><a href="javascript: void(0)" onclick="filterSelection('90kids')">90's Kids <span>2</span></a></li>
+								<li><a href="javascript: void(0)" onclick="filterSelection('cinema')">Cinema <span>1</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /category widget -->
+
+				<!-- post widget -->
+				<div class="aside-widget">
+					<div class="section-title">
+						<h2 class="title">Popular Posts</h2>
+					</div>
+					<!-- post -->
+					<div class="post post-widget">
+						<a class="post-img" href="blog-post-2.html"><img src="./img/popular1.png" alt=""></a>
+						<div class="post-body">
+							<div class="post-category">
+								<a href="category.html?filter=tv">TV Shows</a>
+							</div>
+							<h3 class="post-title"><a href="blog-post-2.html">Popular Tv Shows in Tamil</a></h3>
+						</div>
+					</div>
+					<!-- /post -->
+
+					<!-- post -->
+					<div class="post post-widget">
+						<a class="post-img" href="blog-post-9.html"><img src="./img/popular2.png" alt=""></a>
+						<div class="post-body">
+							<div class="post-category">
+								<a href="category.html?filter=90kids">90's Kids</a>
+							</div>
+							<h3 class="post-title"><a href="blog-post-9.html">Top 10 Tamil Shows of 90's Kids</a></h3>
+						</div>
+					</div>
+					<!-- /post -->
+
+					<!-- post -->
+					<div class="post post-widget">
+						<a class="post-img" href="blog-post-1.html"><img src="./img/popular3.png" alt=""></a>
+						<div class="post-body">
+							<div class="post-category">
+								<a href="category.html?filter=tv">TV Shows</a>
+							</div>
+							<h3 class="post-title"><a href="blog-post-1.html">Unknown Facts about Cooku With Comali</a></h3>
+						</div>
+					</div>
+					<!-- /post -->
+
+					<!-- post -->
+					<div class="post post-widget">
+						<a class="post-img" href="blog-post-7.html"><img src="./img/popular4.png" alt=""></a>
+						<div class="post-body">
+							<div class="post-category">
+								<a href="category.html?filter=serials">Serials</a>
+							</div>
+							<h3 class="post-title"><a href="blog-post-7.html">Top 10 Serials on Zee TV</a></h3>
+						</div>
+					</div>
+					<!-- /post -->
+				</div>
+				<!-- /post widget -->
+
+					<!-- Ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-1.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /Ad widget -->
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+<!-- FOOTER -->
+<footer id="footer">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<div class="footer-logo">
+						<a href="index.html" class="logo"><img src="./img/footer_logo.png" style="height:80px;width: 200px;" alt=""></a>
+					</div>
+					<p>Your one-stop destination for television facts, games and a lot more to keep you entertained and let the fun times roll. </p>
+					<!-- <ul class="contact-social">
+						<li><a href="#" class="social-facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="social-google-plus"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Categories</h3>
+					<div class="category-widget">
+						<ul>
+							<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+							<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+							<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+							<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+							<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Tags</h3>
+					<div class="tags-widget">
+						#onlineentertainment #CWC #CookwithComali #Blogs #Entertainment #Games  #Tamil #TVChannels #TVShows #tamil television trp ratings #TV channel list # tv shows games online #tv shows games #tv shows games for android #tv games shows 2021 #tv games shows 2020 #tv games shows 2022 #game shows tv shows #reality tv shows games #tv shows video games #games in tv shows
+						<!-- <ul>
+							<li><a href="#">Social</a></li>
+							<li><a href="#">Lifestyle</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Technology</a></li>
+							<li><a href="#">Fashion</a></li>
+							<li><a href="#">Life</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Magazine</a></li>
+							<li><a href="#">Food</a></li>
+							<li><a href="#">Health</a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Pages</h3>
+					<div class="tags-widget">
+						<ul>
+							<li><a href="index.html">Home</a></li><br>
+							<li><a href="about.html">About Us</a></li><br>
+							<li><a href="contact.html">Contacts</a></li><br>
+							<li><a href="privacy_policy.html">Privacy Policy</a></li><br>
+							<li><a href="Terms.html">Terms</a></li><br>
+							<li><a href="disclaimer.html">Disclaimer</a></li>
+						</ul>
+					</div>
+					<!-- <h3 class="footer-title">Newsletter</h3>
+					<div class="newsletter-widget">
+						<form>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+							<input class="input" name="newsletter" placeholder="Enter Your Email">
+							<button class="primary-button">Subscribe</button>
+						</form>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+
+		<!-- row -->
+		<div class="footer-bottom row">
+			<div class="col-md-6 col-md-push-6">
+				<ul class="footer-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-md-pull-6">
+				<div class="footer-copyright">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</footer>
+<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		const urlParams = new URLSearchParams(window.location.search);
+		const myParam = urlParams.get('filter');
+		console.log(myParam);
+        if(myParam == null)
+		{
+			filterSelection("all");
+		}
+		else
+		{
+			filterSelection(myParam);
+		}	 
+		function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("col-md-6");
+		if (c == "all") c = "";
+		for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		}
+		}
+
+		function w3AddClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		}
+		}
+
+		function w3RemoveClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			}
+		}
+		element.className = arr1.join(" ");
+		
+		}
+
+
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function(){
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		});
+		}
+	</script>
+</body>
+
+</html>
+

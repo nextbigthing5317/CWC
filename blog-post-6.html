@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Telly Trends</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel = "icon" href = "/cwc/img/icon.png" sizes="20x20 40x40" type = "image/x-icon">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/Winwheel.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header id="header">
+		<!-- NAV -->
+		<div id="nav">
+			<!-- Top Nav -->
+			<div id="nav-top">
+				<div class="container">
+					<!-- social -->
+					<!-- <ul class="nav-social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+					<!-- /social -->
+
+					<!-- logo -->
+					<div class="nav-logo">
+						<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+					</div>
+					<!-- /logo -->
+
+					<!-- search & aside toggle -->
+					<div class="nav-btns">
+						<button class="aside-btn"><i class="fa fa-bars"></i></button>
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+						<div id="nav-search">
+							<form>
+								<input class="input" placeholder="Enter your search...">
+							</form>
+							<button class="nav-close search-close">
+								<span></span>
+							</button>
+						</div>
+					</div>
+					<!-- /search & aside toggle -->
+				</div>
+			</div>
+			<!-- /Top Nav -->
+
+			<!-- Main Nav -->
+			<div id="nav-bottom">
+				<div class="container">
+					<!-- nav -->
+					<ul class="nav-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="has-dropdown">
+							<a href="cwc.html">Games</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="cwc.html">Cooku with Comali</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="has-dropdown">
+							<a href="category.html">Blogs</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+					<!-- /nav -->
+				</div>
+			</div>
+
+			<!-- /Main Nav -->
+
+			<!-- Aside Nav -->
+			<div id="nav-aside">
+				<ul class="nav-aside-menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="has-dropdown"><a>Games</a>
+						<ul class="dropdown">
+							<li><a href="cwc.html">Cooku with Comali</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown"><a>Blogs</a>
+						<ul class="dropdown">
+							<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms and Conditions</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+				<button class="nav-close nav-aside-close"><span></span></button>
+			</div>
+			<!-- /Aside Nav -->
+		</div>
+		<!-- /NAV -->
+
+		<!-- PAGE HEADER -->
+		<div id="post-header" class="page-header">
+			<div class="page-header-bg" style="background-image: url('./img/banner/vijay.png');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="post-category">
+							<a href="category.html?filter=serial">Serials</a>
+						</div>
+						<h1>Top 6 serials on Vijay tv</h1>
+						<ul class="post-meta">
+							<li>5 March 2022</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8">
+					<!-- post share -->
+					<div class="section-row">
+						<!-- <div class="post-share">
+							<a href="#" class="social-facebook"><i class="fa fa-facebook"></i><span>Share</span></a>
+							<a href="#" class="social-twitter"><i class="fa fa-twitter"></i><span>Tweet</span></a>
+							<a href="#" class="social-pinterest"><i class="fa fa-pinterest"></i><span>Pin</span></a>
+							<a href="#" ><i class="fa fa-envelope"></i><span>Email</span></a>
+						</div> -->
+					</div>
+					<!-- /post share -->
+<!-- post content -->
+					<div class="section-row">
+
+						<h2>6) Mouna Raagam 2:</h2><br>
+						<center><img src="./img/VijayTV/6.png" width="350" height="300" ><br></center><br>
+						<p style="text-align: justify;">
+							Mouna Raagam 2 is a Tamil serial on Vijay TV that holds sixth with the TRP of <b>4.33</b>. This serial is based on a girl who has been longing for her father’s love since childhood. “Sakthi” is a girl who separated from her father because her father married some other girl in force. The part of this serial depicts how Sakthi finds her father and she lives with her father for some years. Later, the second married girl to her father made Sakthi and her mother get out of her house. This is the end of season 1. Late comes season 2 with Sakthi being the grown-up girl who will come to Chennai for her mother’s operation. There she worked with her father’s music school without the knowledge of her mother. She married a guy named “Varun” because his father helped with Sakthi's mother’s operation.						
+						</p><br><br> 
+	
+						<h2>5) Thamizhum Saraswathiyum:</h2><br>
+						<center><img src="./img/VijayTV/5.png" width="350" height="300" ><br></center><br>
+						<p style="text-align: justify;">
+							Thamizhum Saraswathiyum is a Tamil serial on Vijay TV that takes the fifth position with the TRP of <b>5.85</b>. A girl “Saraswathi” who didn’t pass 12th grade for more than 5 attempts is the heroine. A guy named “Thamizh” also didn’t pass 12th grade but he is running their family business. They both will be in love with each other. Thamizh’s mother loves Thamizh very much and hates love marriages. One day Thamizh’s mother will see Saraswathi in the temple and she likes her so much that she thinks of marrying her to Thamizh. When Thamizh’s mother asks about Saraswathi’s educational qualification in the temple, Saraswathi’s friend will tell a lie that she studied “MBA”. Thamizh’s mother likes her even more. She decides to marry her with Thamizh as she has to win the challenge of marrying Thamizh with one MBA studied girl. Then they got married. After a few hours of marriage, Thamizh’s mom came to know that Saraswathi has not studied MBA. This led to the problem in Thamizh’s family. Now, Saraswathi thought of appearing for the 12th exam and clearing it to get an MBA degree which creates interest in the audience to watch this serial.
+						</p><br><br>
+
+						<h2>4) Raja Rani 2:</h2><br>
+						<center><img src="./img/VijayTV/4.png" width="350" height="300" ><br></center><br>
+						<p style="text-align: justify;">
+							Raja Rani 2 is a Tamil serial on Vijay TV that holds fourth place with the TRP of <b>7.46</b>. A girl named “Sandhiya” lost her parents after her college in bombardment in market. Her parent’s aim was to see Sandhiya as an IPS officer. But her greedy brother who wants to go to America for his career had planned to marry Sandhiya to someone before he goes. There was a family in Sivakasi with a sweet shop. The groom named “Saravanan” run the sweet shop. This family was in search of a bride who is illiterate. Sandhiya’s brother told a lie that she is illiterate. So Sandhiya got married to Saravanan. After some days, Saravanan’s family knew that Sandhiya has studied. So Saravanan’s mother started hating her. So Sandhiya tried to be a good daughter-in-law and she did it. Saravanan’s mother doesn’t even like the Police. When Saravanan told about Sandhiya and her parent’s wish of becoming an IPS officer, Saravanans’s mother objected to it. Now, Saravanan is in the phase of convincing her mother. 
+						</p><br><br>
+	
+						 <h2>3) Bharathi Kannamma:</h2><br> 
+						 <center><img src="./img/VijayTV/3.png" width="350" height="300" ><br></center><br>
+						 <p style="text-align: justify;">
+							Bharathi Kannnamma is a Tamil serial on Vijay TV that tops third with the TRP of <b>8.29</b>. This serial portrays two different problems that most women face. First, the girl named “Kannamma” is brought up by her stepmother who does a lot of trouble to her during her childhood days. A guy named “Bharathi” is a famous cardio doctor who helps people a lot and does treatments freely to help poor people. Bharathi’s family is a well-settled family. Her mother hates dark skin tone people. Bharathi fell in love with Kannama who is a dark-skinned girl. Bharathi and Kannama got married one day. But Bharathi’s mother hates Kannama for her color. Gradually she started liking Kannamma because of her selfless and caring nature. The villi named “Venba” who wish to marry Bharathi from her college days has told one lie to Bharathi about his health condition ie. Bharathi cannot be a father as he has some issues. Bharathi also believed that. One fine day, Kannama got pregnant and both Bharathi and Kannama were very happy. After a few days, Venba triggered Bharathi to doubt Kannama about her pregnancy. This turns the second plot of the story. After this, Kannama moved out of Bharathi’s house during her pregnancy and she started living alone. The main curiosity about this serial is when will Bharathi knows the truth and when he will accept Kannama and her daughter.
+						</p><br><br>
+	
+						<h2>2) Pandian Stores:</h2><br>
+						<center><img src="./img/VijayTV/2.png" width="350" height="300" ><br></center><br>
+						<p style="text-align: justify;">
+							Pandian Stores is a Tamil serial on Vijay TV which tops second with the TRP of <b>8.32</b>. This serial is based on a village family with 4 brothers along with their mother. They lost their father and the first brother only take care of his family. They run departmental stores named “Pandian stores”. The elder brother of this serial is Stalin Muthu named “Moorthy” in this serial. A girl named “Dhanam” has feelings for Moorthy who is her brother’s friend. After convincing her family, Dhanam married Moorthy and Dhanam brought up Moorthy’s 3 younger brothers. After many years, all 3 brothers also got married and everyone lives in the same home. This serial depicts the adjusting nature of everyone in the family to live unitedly as a join family. 
+						</p><br><br>
+	
+						<h2>1) Baakyalakshmi:</h2><br> 
+						<center><img src="./img/VijayTV/1.png" width="350" height="300" ><br></center><br>
+						<p style="text-align: justify;">
+							Baakyalakshmi is a Tamil serial telecasting in Vijay Television which tops the list with the TRP of <b>9.07</b>. This story is based on the mother who selflessly does all the work in the home without expecting anything in return. Baakyalakshmi is a lady who is illiterate and marries a man(Gopinath) who is literate and running his own business. Gopinath marries Baakyalakshmi because of his parent's force. They live as a joined family with 3 children - 2 sons and 1 daughter along with Gopinath’s father and mother. Gopinath was a good son and good father until she meets Raadhika. Raadhika was the girl whom Gopinath was in love with before he marries Baakyalakshmi. After many years, Gopinath met Raadhika. Raadhika is also married to one guy and has one little daughter. She was not on good terms with her husband and got divorced. Gopinath after many years of meeting Raadhika still has feelings towards her. Eventually, Raadhika also started liking Gopinath. Baakyalakshmi is an innocent lady who blindly believes her husband and does things that he says. Gopinath, without the knowledge of Baakya, got a sign in divorce paper from her. This serial is the main example for the woman out in the society who thinks of her husband like the god and does everything blindly and gets cheated.
+						</p><br><br>
+
+
+					</div>
+					<!-- /post content -->
+
+				</div>
+				<div class="col-md-4">
+					<!-- ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-3.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /ad widget -->
+
+					<!-- category widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2 class="title">Categories</h2>
+						</div>
+						<div class="category-widget">
+							<ul>
+								<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+								<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+								<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+								<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+								<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /category widget -->
+
+					<!-- post widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2 class="title">Popular Posts</h2>
+						</div>
+						<!-- post -->
+						<div class="post post-widget">
+							<a class="post-img" href="blog-post-2.html"><img src="./img/popular1.png" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="category.html?filter=tv">TV Shows</a>
+								</div>
+								<h3 class="post-title"><a href="blog-post-2.html">Popular Tv Shows in Tamil</a></h3>
+							</div>
+						</div>
+						<!-- /post -->
+
+						<!-- post -->
+						<div class="post post-widget">
+							<a class="post-img" href="blog-post-9.html"><img src="./img/popular2.png" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="category.html?filter=90kids">90's Kids</a>
+								</div>
+								<h3 class="post-title"><a href="blog-post-9.html">Top 10 Tamil Shows of 90's Kids</a></h3>
+							</div>
+						</div>
+						<!-- /post -->
+
+						<!-- post -->
+						<div class="post post-widget">
+							<a class="post-img" href="blog-post-1.html"><img src="./img/popular3.png" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="category.html?filter=tv">TV Shows</a>
+								</div>
+								<h3 class="post-title"><a href="blog-post-1.html">Unknown Facts about Cooku With Comali</a></h3>
+							</div>
+						</div>
+						<!-- /post -->
+
+						<!-- post -->
+						<div class="post post-widget">
+							<a class="post-img" href="blog-post-7.html"><img src="./img/popular4.png" alt=""></a>
+							<div class="post-body">
+								<div class="post-category">
+									<a href="category.html?filter=serials">Serials</a>
+								</div>
+								<h3 class="post-title"><a href="blog-post-7.html">Top 10 Serials on Zee TV</a></h3>
+							</div>
+						</div>
+						<!-- /post -->
+					</div>
+					<!-- /post widget -->
+
+					<!-- Ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-1.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /Ad widget -->
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+<!-- FOOTER -->
+<footer id="footer">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<div class="footer-logo">
+						<a href="index.html" class="logo"><img src="./img/footer_logo.png" style="height:80px;width: 200px;" alt=""></a>
+					</div>
+					<p>Your one-stop destination for television facts, games and a lot more to keep you entertained and let the fun times roll. </p>
+					<!-- <ul class="contact-social">
+						<li><a href="#" class="social-facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="social-google-plus"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Categories</h3>
+					<div class="category-widget">
+						<ul>
+							<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+							<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+							<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+							<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+							<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Tags</h3>
+					<div class="tags-widget">
+						#onlineentertainment #CWC #CookwithComali #Blogs #Entertainment #Games  #Tamil #TVChannels #TVShows #tamil television trp ratings #TV channel list # tv shows games online #tv shows games #tv shows games for android #tv games shows 2021 #tv games shows 2020 #tv games shows 2022 #game shows tv shows #reality tv shows games #tv shows video games #games in tv shows
+						<!-- <ul>
+							<li><a href="#">Social</a></li>
+							<li><a href="#">Lifestyle</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Technology</a></li>
+							<li><a href="#">Fashion</a></li>
+							<li><a href="#">Life</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Magazine</a></li>
+							<li><a href="#">Food</a></li>
+							<li><a href="#">Health</a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Pages</h3>
+					<div class="tags-widget">
+						<ul>
+							<li><a href="index.html">Home</a></li><br>
+							<li><a href="about.html">About Us</a></li><br>
+							<li><a href="contact.html">Contacts</a></li><br>
+							<li><a href="privacy_policy.html">Privacy Policy</a></li><br>
+							<li><a href="Terms.html">Terms</a></li><br>
+							<li><a href="disclaimer.html">Disclaimer</a></li>
+						</ul>
+					</div>
+					<!-- <h3 class="footer-title">Newsletter</h3>
+					<div class="newsletter-widget">
+						<form>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+							<input class="input" name="newsletter" placeholder="Enter Your Email">
+							<button class="primary-button">Subscribe</button>
+						</form>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+
+		<!-- row -->
+		<div class="footer-bottom row">
+			<div class="col-md-6 col-md-push-6">
+				<ul class="footer-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-md-pull-6">
+				<div class="footer-copyright">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</footer>
+<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
+

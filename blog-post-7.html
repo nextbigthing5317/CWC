@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Telly Trends</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link rel = "icon" href = "/cwc/img/icon.png" sizes="20x20 40x40" type = "image/x-icon">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/Winwheel.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header id="header">
+		<!-- NAV -->
+		<div id="nav">
+			<!-- Top Nav -->
+			<div id="nav-top">
+				<div class="container">
+					<!-- social -->
+					<!-- <ul class="nav-social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+					<!-- /social -->
+
+					<!-- logo -->
+					<div class="nav-logo">
+						<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+					</div>
+					<!-- /logo -->
+
+					<!-- search & aside toggle -->
+					<div class="nav-btns">
+						<button class="aside-btn"><i class="fa fa-bars"></i></button>
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+						<div id="nav-search">
+							<form>
+								<input class="input" placeholder="Enter your search...">
+							</form>
+							<button class="nav-close search-close">
+								<span></span>
+							</button>
+						</div>
+					</div>
+					<!-- /search & aside toggle -->
+				</div>
+			</div>
+			<!-- /Top Nav -->
+
+			<!-- Main Nav -->
+			<div id="nav-bottom">
+				<div class="container">
+					<!-- nav -->
+					<ul class="nav-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="has-dropdown">
+							<a href="cwc.html">Games</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="cwc.html">Cooku with Comali</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="has-dropdown">
+							<a href="category.html">Blogs</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+					<!-- /nav -->
+				</div>
+			</div>
+
+			<!-- /Main Nav -->
+
+			<!-- Aside Nav -->
+			<div id="nav-aside">
+				<ul class="nav-aside-menu">
+					<li><a href="index.html">Home</a></li>
+					<li class="has-dropdown"><a>Games</a>
+						<ul class="dropdown">
+							<li><a href="cwc.html">Cooku with Comali</a></li>
+						</ul>
+					</li>
+					<li class="has-dropdown"><a>Blogs</a>
+						<ul class="dropdown">
+							<li><a href="category.html?filter=tv">TV Shows</a></li>
+							<li><a href="category.html?filter=serials">Serials</a></li>
+							<li><a href="category.html?filter=90kids">90's Kids </a></li>
+							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category.html?filter=channel">Channels</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms and Conditions</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+				<button class="nav-close nav-aside-close"><span></span></button>
+			</div>
+			<!-- /Aside Nav -->
+		</div>
+		<!-- /NAV -->
+
+		<!-- PAGE HEADER -->
+		<div id="post-header" class="page-header">
+			<div class="page-header-bg" style="background-image: url('./img/banner/zee.png');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="post-category">
+							<a href="category.html?filter=serial">Serials</a>
+						</div>
+						<h1>Top 10 serials on Zee Tv</h1>
+						<ul class="post-meta">
+							<li>15 March 2022</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8">
+					<!-- post share -->
+					<div class="section-row">
+						<!-- <div class="post-share">
+							<a href="#" class="social-facebook"><i class="fa fa-facebook"></i><span>Share</span></a>
+							<a href="#" class="social-twitter"><i class="fa fa-twitter"></i><span>Tweet</span></a>
+							<a href="#" class="social-pinterest"><i class="fa fa-pinterest"></i><span>Pin</span></a>
+							<a href="#" ><i class="fa fa-envelope"></i><span>Email</span></a>
+						</div> -->
+					</div>
+					<!-- /post share -->
+<!-- post content -->
+					<div class="section-row">
+						<h2>10) Anbe Sivam:</h2><br>
+						<center><img src="./img/ZeeTv/10.png" width="350" height="300" ><br></center><br>	
+						<p style="text-align: justify;">
+							Anbe Sivam is a Tamil serial on Zee TV that takes the tenth position in the list with the TRP of <b>1.67</b>. Anbu Selvi is a lady who is separated from her husband has two children - one girl and one boy. Muthu Sivam is a guy who is separated from his wife and living alone with his daughter. Anbu Selvi and Muthu Sivam got many occasions to meet. Whenever they meet, they ended up in a fight. After some days, they started liking each other and they fell in love. They are both married and they stay along with their three kids.
+						</p><br><br> 
+	
+						<h2>9) Deivam Thandha Poove:</h2><br>
+						<center><img src="./img/ZeeTv/9.png" width="350" height="300" ><br></center><br>	
+						<p style="text-align: justify;">
+							Deivam Thandha Poove is a Tamil serial on Zee TV that takes the ninth position in the list with the TRP of <b>1.89</b>. “Mithra” is a middle-class girl. Her family is indebted to someone for 15Lakhs. So that person is asking for the money. If Mithra’s family couldn’t repay the amount, he will take Mithra along with him. This was the condition he has put. So Mithra came to work in some other place to arrange money. She is working as a Nurse in some hospitals. One of the chief doctors is Vinay’s(hero) father. Vinay is affected by Cancer. So nobody is willing to marry him and his father is worried about that. So Mithra offered Vinay’s father that she will marry his son Vinay and she needs 15Lakhs in return. Vinay’s father accepted that and finally, Mithra and Vinay are married to each other.
+						</p><br><br>
+
+						<h2>8) Peranbu:</h2><br>
+						<center><img src="./img/ZeeTv/8.png" width="350" height="300" ><br></center><br>	
+						<p style="text-align: justify;">
+							Peranbu is a Tamil serial on Zee TV which takes the eighth position in the list with the TRP of <b>1.93</b>. In this serial, Vanathi is a kind-hearted young woman who was married to Karthick. Their marriage happened because of some circumstances. So Vanathi and Karthick are not comfortable with each other and they don't like this marriage relationship. Vanathi’s mother-in-law understands their discomfort between them and tries to make them unite.						
+						</p><br><br>
+	
+						 <h2>7) Rajini:</h2><br> 
+						 <center><img src="./img/ZeeTv/7.png" width="350" height="300" ><br></center><br>	
+						 <p style="text-align: justify;">
+							Rajini is a Tamil serial on Zee TV which takes the eighth position in the list with the TRP of <b>1.94</b>. Rajini is a strong and bold girl who does everything for the happiness of her family. Rajini left her boyfriend as her sister loves him. So to make her sister happy, she sacrificed her life. 
+						</p><br><br>
+
+						<h2>6) Rettai Roja:</h2><br>
+						<center><img src="./img/ZeeTv/6.png" width="350" height="300" ><br></center><br>	
+						<p style="text-align: justify;">
+							Rettai Roja is a Tamil serial on Zee TV that scores sixth in the list with the TRP of <b>2.08</b>. Anu and Abi are twin sisters with two different characters. Anu is dominant arrogant whereas Abi is silent and humble. Anu hates Abi for many reasons. Anu fell in love with Santhosh and Abi fell in love with Sanjeev. Santhosh and Sanjeev are brothers. One day when Anu knows that Santhosh and Sanjeev are brothers and if Abi marries Sanjeev, She will come to this home and live a rich life. So to avoid that, Anu made a plan to kidnapping Abi on the day of marriage. So Anu made kidnappers. But Anu felt guilt for doing so. This plan of Anu backfired her, as she turns out good and told the kidnappers not to kidnap Anu, the kidnappers killed Anu as she might reveal the truth to everyone. Unfortunately, Anu died. Sanjeev and Abi are married but Sanjeev has no interest to marry Abi because she lied to Sanjeev that she loves him for the sake. So now Sanjeev is unhappy in his marriage life. Anu came as a spirit to help Abi in uniting her with Sanjeev.
+						</p><br><br> 
+	
+						<h2>5) Gokulathil Seethai:</h2><br>
+						<center><img src="./img/ZeeTv/5.png" width="350" height="300" ><br></center><br>	
+						<p style="text-align: justify;">
+							Gokulathil Seethai is a Tamil serial in Zee TV that scores sixth on the list with the TRP of <b>2.64</b>. Vasundhara is a middle-class girl who has only a mother.  Her father died.  Arjun is a rich and arrogant man who does not obey anyone’s words. So his mother Suchithra was worried about him. One day, Vasundhara joins as a secretary to Arjun. He behaves rudely with Vasundhara. So she tried to change his arrogant attitude and finally, she did so. Arjun thanked Vasundhara for making him good and his mother also liked Vasundhara. Gradually, Arjun fell in love with Vasu and her also. Finally, they get married with many disruptions.
+						</p><br><br>
+
+						<h2>4) Vidhya No.1:</h2><br>
+						<center><img src="./img/ZeeTv/4.png" width="350" height="300" ><br></center><br>	
+						<p style="text-align: justify;">
+							Vidhya No.1  is a Tamil serial on Zee TV that scores fourth in the list with the TRP of <b>3.34</b>. Vidhya is an illiterate girl who is living in a village. Sanjay is a rich boy who was well educated and brought up in City. Sanjay’s mother is also well educated. So she is only willing to marry Sanjay with one well-educated and rich girl. Even Sanjay wishes the same. But Vidhya wishes to marry Sanjay. The crux of the story is whether Vidhya is married to Sanjay or not. 
+						</p><br><br>
+	
+						 <h2>3) Pudhu Pudhu Arthangal:</h2><br> 
+						 <center><img src="./img/ZeeTv/3.png" width="350" height="300" ><br></center><br>	
+						 <p style="text-align: justify;">
+							Pudhu Pudhu Arthangal is a Tamil serial on Zee TV that scores third in the list with the TRP of <b>3.34</b>. This story portrays the widow women who lost her happiness on the demise of her husband but living to take care of her son. A widow woman “Lakshmi” is a good housewife. She takes care of her father-in-law and her son “Santhosh”. After a few years, Santhosh was married to a girl named Pavithra. Pavithra was trying to make Lakshmi’s life colorful and joyous. A man named Hari Krishna fell in love with Lakshmi. As time passes, Hari Krishna married Lakshmi which makes her life meaningful.
+						</p><br><br>
+	
+						<h2>2) Sembaruthi:</h2><br>
+						<center><img src="./img/ZeeTv/2.png" width="350" height="300" ><br></center><br>	
+						<p style="text-align: justify;">
+							Sembaruthi is a Tamil serial on Zee TV that scores second in the list with the TRP of <b>3.41</b>. A girl named “Parvathi” was brought up by her grandmother. Her grandmother died when she was at the age of above 20. So she decided to work as a maid. She got the opportunity to work as a maid in one rich family. Akhilandeshwari is a rich woman. Parvathi was working in Akhilandeshwari’s house. Then she fell in love with Adhithya, Akhilandeshwari’s son. They married secretly without the knowledge of anyone and also she continues to work as a maid even then. One day  Akhilandeshwari finds that they were married and she shows hatred towards Parvathi. After some days,  Akhilandeshwari accepted Parvathi and Adhithya.
+						</p><br><br>
+	
+						<h2>1) Ninaithale Inikkum:</h2><br> 
+						<center><img src="./img/ZeeTv/1.png" width="350" height="300" ><br></center><br>	
+						<p style="text-align: justify;">
+							Ninaithale Inikkum is a Tamil serial in Zee TV which tops first in the list with the TRP of <b>3.94</b>. A girl named “Bhommi” lost her father when she was young. She was brought up by her mother. Her paternal uncle’s wife’s brother was torturing Bhommi to marry him. But Bhommi didn’t wish to do. So she escaped from that village along with her mother and younger brother and moved to Chennai. On the other hand, A guy named “Siddharth” is a rich boy who lost his mother at a younger age. He thought that his father is the reason for her mother’s demise. So he hates father. He only likes her grandmother. Bhommi family decides to come to the hero’s home as Bhommi’s family knows Siddharth’s grandmother. One day, Siddharth’s grandmother arranged a wedding for Bhommi with a guy. But he ran away on the day of the wedding. So to save his Grandmother’s reputation, Siddharth decided to marry Bhommi. 
+						</p><br><br>
+
+					</div>
+					<!-- /post content -->
+
+				</div>
+				<div class="col-md-4">
+					<!-- ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-3.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /ad widget -->
+
+					<!-- category widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2 class="title">Categories</h2>
+						</div>
+						<div class="category-widget">
+							<ul>
+								<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+								<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+								<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+								<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+								<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /category widget -->
+
+			<!-- post widget -->
+			<div class="aside-widget">
+				<div class="section-title">
+					<h2 class="title">Popular Posts</h2>
+				</div>
+				<!-- post -->
+				<div class="post post-widget">
+					<a class="post-img" href="blog-post-2.html"><img src="./img/popular1.png" alt=""></a>
+					<div class="post-body">
+						<div class="post-category">
+							<a href="category.html?filter=tv">TV Shows</a>
+						</div>
+						<h3 class="post-title"><a href="blog-post-2.html">Popular Tv Shows in Tamil</a></h3>
+					</div>
+				</div>
+				<!-- /post -->
+
+				<!-- post -->
+				<div class="post post-widget">
+					<a class="post-img" href="blog-post-9.html"><img src="./img/popular2.png" alt=""></a>
+					<div class="post-body">
+						<div class="post-category">
+							<a href="category.html?filter=90kids">90's Kids</a>
+						</div>
+						<h3 class="post-title"><a href="blog-post-9.html">Top 10 Tamil Shows of 90's Kids</a></h3>
+					</div>
+				</div>
+				<!-- /post -->
+
+				<!-- post -->
+				<div class="post post-widget">
+					<a class="post-img" href="blog-post-1.html"><img src="./img/popular3.png" alt=""></a>
+					<div class="post-body">
+						<div class="post-category">
+							<a href="category.html?filter=tv">TV Shows</a>
+						</div>
+						<h3 class="post-title"><a href="blog-post-1.html">Unknown Facts about Cooku With Comali</a></h3>
+					</div>
+				</div>
+				<!-- /post -->
+
+				<!-- post -->
+				<div class="post post-widget">
+					<a class="post-img" href="blog-post-7.html"><img src="./img/popular4.png" alt=""></a>
+					<div class="post-body">
+						<div class="post-category">
+							<a href="category.html?filter=serials">Serials</a>
+						</div>
+						<h3 class="post-title"><a href="blog-post-7.html">Top 10 Serials on Zee TV</a></h3>
+					</div>
+				</div>
+				<!-- /post -->
+			</div>
+			<!-- /post widget -->
+
+					<!-- Ad widget -->
+					<!-- <div class="aside-widget text-center">
+						<a href="#" style="display: inline-block;margin: auto;">
+							<img class="img-responsive" src="./img/ad-1.jpg" alt="">
+						</a>
+					</div> -->
+					<!-- /Ad widget -->
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+<!-- FOOTER -->
+<footer id="footer">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<div class="footer-logo">
+						<a href="index.html" class="logo"><img src="./img/footer_logo.png" style="height:80px;width: 200px;" alt=""></a>
+					</div>
+					<p>Your one-stop destination for television facts, games and a lot more to keep you entertained and let the fun times roll. </p>
+					<!-- <ul class="contact-social">
+						<li><a href="#" class="social-facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="social-twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="social-google-plus"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="social-instagram"><i class="fa fa-instagram"></i></a></li>
+					</ul> -->
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Categories</h3>
+					<div class="category-widget">
+						<ul>
+							<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
+							<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
+							<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
+							<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
+							<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Tags</h3>
+					<div class="tags-widget">
+						#onlineentertainment #CWC #CookwithComali #Blogs #Entertainment #Games  #Tamil #TVChannels #TVShows #tamil television trp ratings #TV channel list # tv shows games online #tv shows games #tv shows games for android #tv games shows 2021 #tv games shows 2020 #tv games shows 2022 #game shows tv shows #reality tv shows games #tv shows video games #games in tv shows
+						<!-- <ul>
+							<li><a href="#">Social</a></li>
+							<li><a href="#">Lifestyle</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Travel</a></li>
+							<li><a href="#">Technology</a></li>
+							<li><a href="#">Fashion</a></li>
+							<li><a href="#">Life</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Magazine</a></li>
+							<li><a href="#">Food</a></li>
+							<li><a href="#">Health</a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-widget">
+					<h3 class="footer-title">Pages</h3>
+					<div class="tags-widget">
+						<ul>
+							<li><a href="index.html">Home</a></li><br>
+							<li><a href="about.html">About Us</a></li><br>
+							<li><a href="contact.html">Contacts</a></li><br>
+							<li><a href="privacy_policy.html">Privacy Policy</a></li><br>
+							<li><a href="Terms.html">Terms</a></li><br>
+							<li><a href="disclaimer.html">Disclaimer</a></li>
+						</ul>
+					</div>
+					<!-- <h3 class="footer-title">Newsletter</h3>
+					<div class="newsletter-widget">
+						<form>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+							<input class="input" name="newsletter" placeholder="Enter Your Email">
+							<button class="primary-button">Subscribe</button>
+						</form>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+
+		<!-- row -->
+		<div class="footer-bottom row">
+			<div class="col-md-6 col-md-push-6">
+				<ul class="footer-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="Terms.html">Terms</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-md-pull-6">
+				<div class="footer-copyright">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</div>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</footer>
+<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
+
