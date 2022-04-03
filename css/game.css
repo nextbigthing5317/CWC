@@ -1,0 +1,579 @@
+
+			.icon {
+  background: url('../BlogCovers/cwc.png');
+  height: 40px;
+  width: 40px;
+  display: block;
+  /* Other styles here */
+}
+#Div2,#final,#ques,#wheel,#dishes{
+  display: none;
+}
+.qbutton[disabled] 
+{
+    background-color: #00ff00;
+        
+}
+
+/* qbutton {
+    display: inline-block;
+     height: 134px; 
+    padding: 0;
+	height: 100px; 
+	margin:10px;
+    vertical-align: top;
+     width: 100px;
+} */
+
+qbutton {
+    /* display: inline-block;
+    height: 134px; */
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    /* width: 104px; */
+}
+.break
+{
+   width: 100px;
+}
+
+.item  {
+ float:left;
+  width:500px;
+  height:500px;
+  border:1px solid #d8dbdf;
+  background-color:#f4f4f4;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+font-size: 18px;
+  text-align:center;
+  line-height:500px;
+}
+td.the_wheel
+{
+    background-image: url(../img/CUISINE.png);
+    background-position: center;
+    background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+/* h1, p
+{
+    margin: 0;
+} */
+
+div.power_controls
+{
+    margin-right:0px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+button {
+    display: inline-block;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+	position: relative;
+}
+
+#close-image img {
+    display: block;
+    height: 130px;  
+    width: 100px;
+}
+.div11{
+	display: block;
+}
+.div12{
+	display: block;
+}
+.div13{
+	display: block;
+}
+.div14{
+	display: block;
+}
+.div15{
+	display: block;
+}
+.div16{
+	display: block;
+}
+.div17{
+	display: block;
+}
+.div18{
+	display: block;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  /* width: 250px;
+  height: 250px; */
+  width: 40%;
+  padding: 5px;
+  margin:auto;
+  
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin:auto;
+}
+
+/* adding styles for cards */
+
+.scene {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  perspective: 600px;
+  /* margin-left: 90px; */
+ 
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  margin: auto;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  width: 250px;
+    height: 250px;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+  margin:auto;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
+.stylecard {
+	background-size:cover; 
+	width: 250px;
+    height: 250px;
+	object-fit: cover;
+}
+
+.card2 h1 {
+          color: #88B04B;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+		  font-weight: bold;
+		  text-align: center;
+        }
+.card2 p {
+          color: #404F5E;
+          font-size:20px;
+          margin: 0;
+		  font-weight: bold;
+		  text-align: center;
+        }
+.card2 i {
+        color: #9ABC66;
+        font-size: 80px;
+        line-height: 200px;
+        margin-left:-15px;
+		text-align: center;
+      }
+.card2 {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: none;
+        margin: 0 auto;
+		text-align: center;
+      }
+
+.card2 body {
+        text-align: center;
+        padding: 40px 0;
+        background: #EBF0F5;
+      } 
+
+	  .confetti {
+          width: 15px;
+          height: 15px;
+          background-color: #f2d74e;
+          position: absolute;
+          left: 50%;
+          animation: confetti 5s ease-in-out -2s infinite;
+          transform-origin: left top;
+        }
+        .confetti:nth-child(1) {
+          background-color: #f2d74e; left: 10%; animation-delay: 0;
+        }
+        .confetti:nth-child(2) {
+          background-color: #95c3de; left: 20%; animation-delay: -5s;
+        }
+        .confetti:nth-child(3) {
+          background-color: #ff9a91; left: 30%; animation-delay: -3s;
+        }
+        .confetti:nth-child(4) {
+          background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
+        }
+        .confetti:nth-child(5) {
+          background-color: #95c3de; left: 50%; animation-delay: -4s;
+        }
+        .confetti:nth-child(6) {
+          background-color: #ff9a91; left: 60%; animation-delay: -6s;
+        }
+        .confetti:nth-child(7) {
+          background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
+        }
+        .confetti:nth-child(8) {
+          background-color: #95c3de; left: 80%; animation-delay: -2s;
+        }
+        .confetti:nth-child(9) {
+          background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
+        }
+        .confetti:nth-child(10) {
+          background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
+        }
+		.confetti:nth-child(11) {
+          background-color: #f2d74e; left: 15%; animation-delay: -4s;
+        }
+        .confetti:nth-child(12) {
+          background-color: #95c3de; left: 25%; animation-delay: -6.1s;
+        }
+        .confetti:nth-child(13) {
+          background-color: #ff9a91; left: 35%; animation-delay: -4.1s;
+        }
+        .confetti:nth-child(14) {
+          background-color: #f2d74e; left: 45%; animation-delay: -2.9s;
+        }
+        .confetti:nth-child(15) {
+          background-color: #95c3de; left: 55%; animation-delay: -2.3s;
+        }
+		.confetti:nth-child(16) {
+          background-color: #ff9a91; left: 60%; animation-delay: -2s;
+        }
+        .confetti:nth-child(17) {
+          background-color: #f2d74e; left: 70%; animation-delay: -3s;
+        }
+        .confetti:nth-child(18) {
+          background-color: #95c3de; left: 80%; animation-delay: -3.2s;
+        }
+        .confetti:nth-child(19) {
+          background-color: #ff9a91; left: 90%; animation-delay: -4.2s;
+        }
+        .confetti:nth-child(20) {
+          background-color: #f2d74e; left: 100%; animation-delay: -5s;
+        }
+
+        @keyframes confetti {
+          0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+          25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+          50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+          75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+          100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+        }
+.ingbutton[disabled] {
+  opacity: 0.5;
+}
+.ingbutton
+{
+	height: 150px; 
+	margin :5px;
+}
+.blur {
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      }
+
+	  .modal {
+  display: none; /* Hidden by default */
+  /* position: fixed; Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+ /* left: 0;
+  top: 0;*/
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* overflow: auto; Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 80px;
+  border: 1px solid #888;
+  width: 50%;
+  height: auto
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* button styles */
+input[type=button] {
+ text-transform: uppercase;
+ /* display: block; */
+ padding: 10px 15px;
+ font-size: 12px;
+ font-weight: 700;
+ color: #97989b;
+ background-color: #323335;
+ border-radius: 2px;
+ -webkit-transition: 0.2s all;
+ transition: 0.2s all;
+ display:inline-block;
+ /* margin-right: 150px; */
+ 
+}
+
+input[type=button]:hover, input[type=button]:focus {
+color: #fff !important;
+background-color: #ee7700;
+}
+
+/* Ribbon styles */
+.ribbon-wrapper {
+  width: 80px;
+  height: 85px;
+  overflow: hidden;
+  position: absolute;
+  top: -2px;
+  left: -3px;
+}
+  .ribbon {
+    font: bold 15px sans-serif;
+    color: #333;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform:    rotate(-45deg);
+    -ms-transform:     rotate(-45deg);
+    -o-transform:      rotate(-45deg);
+    position: relative;
+    padding: 5px 0;
+    top: 10px;
+    left: -25px;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+ }
+
+ #bcontainer{
+    text-align: center;
+	margin-right: 180px;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .modal {
+    display: none; /* Hidden by default */
+    /* position: fixed; Stay in place */
+    /* z-index: 1; Sit on top */
+    padding-top: 50px; /* Location of the box */
+    /* left: 0;
+    top: 0; */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 60px;
+    border: 1px solid #888;
+    width: 90%;
+    height: auto
+  } 
+  
+  /* button styles */
+.b1  {
+  text-transform: uppercase;
+  /* display: block; */
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #97989b;
+  background-color: #323335;
+  border-radius: 2px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  margin-left: 140px;
+  
+ }
+ .b1 input[type=button]:hover, input[type=button]:focus {
+ color: #fff !important;
+ background-color: #ee4266;
+ }
+
+ .b2  {
+  text-transform: uppercase;
+  /* display: block; */
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #97989b;
+  background-color: #323335;
+  border-radius: 2px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  margin-left: 105px;
+  
+ }
+ .b2 input[type=button]:hover, input[type=button]:focus {
+ color: #fff !important;
+ background-color: #ee4266;
+ }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  /* width: 250px;
+  height: 250px; */
+  width: 45%;
+  padding: 5px;
+  margin:auto;
+  
+} 
+
+/* adding styles for cards */
+.scene {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  perspective: 600px;
+  /* margin-left: 90px; */
+ 
+}
+.card {
+  position: relative;
+  width: 160px;
+  height: 200px;
+  cursor: pointer;
+  /* transform-style: preserve-3d;
+  transform-origin: center right; */
+  margin: auto;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  width: 160px;
+  height: 200px;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+  margin:auto;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
+
+.stylecard {
+	/* background-size:cover;  */
+  /* position: relative; */
+	width: 160px;
+  height: 200px;
+  /* margin-right: 10px;  */
+	/* object-fit: cover; */
+}
+
+
+
+}
