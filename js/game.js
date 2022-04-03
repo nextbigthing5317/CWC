@@ -563,7 +563,7 @@ function playSound()
                 document.getElementById('dish2').innerText = cuisines[choice][1];
                 document.getElementById('dish3').innerText = cuisines[choice][2];
                 document.getElementById('dish4').innerText = cuisines[choice][3];
-                document.getElementById('img1').src="cuisines/"+choice+"/1.*";
+                document.getElementById('img1').src="cuisines/"+choice+"/1.jpeg";
                 document.getElementById('img2').src="cuisines/"+choice+"/2.jpeg";
                 document.getElementById('img3').src="cuisines/"+choice+"/3.jpeg";
                 document.getElementById('img4').src="cuisines/"+choice+"/4.jpeg";
