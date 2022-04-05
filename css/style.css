@@ -692,7 +692,6 @@ textarea.input {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('..//BlogCovers/siva1.png');
 }
 
 .page-header .page-header-bg:after {
@@ -702,7 +701,6 @@ textarea.input {
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: url('..//BlogCovers/siva1.png');
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 28, 30, 0)), color-stop(90%, rgba(27, 28, 30, 0.8))); 
   background: linear-gradient(180deg, rgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 0.8) 90%);
 }
