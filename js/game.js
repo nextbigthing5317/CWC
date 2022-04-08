@@ -98,8 +98,8 @@ cards = document.querySelectorAll('.card');
         {
             "1": { "correct":["Pasta","Sweet Corn","Butter","Garam Masala","Cheese","Tomato Puree","Capsicum","Turmeric","Carrot","Ginger"],"wrong":["Rice","Wheat","Cucumber","Lemon","Moong Dal"] },
             "2": { "correct":["Maida","Cheese","Oregano","Chilli Flakes","Yeast","Capsicum","Baking Powder","Mozzarella","Tomato","Onion"],"wrong":["Wine","Lemon","Rava","Flattened Rice","Coconut"] },
-            "3": { "correct":["Olive Oil","Garlic","Italian Seasoning","Vinegar","Cheese","Noodles","Wheat","Tomato","Oregano","Egg"],"wrong":["Milk","Flattened Rice","Vermicelli","Dry grapes","Beetroot"] },
-            "4": { "correct":["Egg","Cheese","Bread","Onion","Milk","Garlic","Pepper Powder","Bacon","Tomato Sauce","Tomato"],"wrong":["Coconut","Jaggery","Tamarind","Ground nut","Anise"] },
+            "3": { "correct":["Olive Oil","Garlic","Italian Seasoning","Vinegar","Cheese","Noodles","Wheat","Tomato","Oregano","Egg"],"wrong":["Milk","Flattened Rice","Vermicelli","Dry Grapes","Beetroot"] },
+            "4": { "correct":["Egg","Cheese","Bread","Onion","Milk","Garlic","Pepper Powder","Bacon","Tomato Sauce","Tomato"],"wrong":["Coconut","Jaggery","Tamarind","Ground Nut","Anise"] },
         },
         "Dessert":
         {
@@ -626,8 +626,8 @@ function playSound()
                         {
                             "1": ["Pasta","Rice","Sweet Corn","Wheat","Butter","Garam Masala","Cucumber","Cheese","Tomato Puree","Lemon","Capsicum","Turmeric","Carrot","Moong Dal","Ginger"],
                             "2": ["Maida","Cheese","Wine","Oregano","Chilli Flakes","Lemon","Yeast","Rava","Capsicum","Baking Powder","Mozzarella","Tomato","Flattened Rice","Coconut","Onion"],
-                            "3": ["Olive Oil","Vermicelli","Garlic","Italian Seasoning","Milk","Vinegar","Cheese","Flattened Rice","Noodles","Wheat","Dry grapes","Tomato","Beetroot","Oregano","Egg"],
-                            "4": ["Ground nut","Egg","Cheese","Bread","Coconut","Onion","Milk","Garlic","Jaggery","Pepper Powder","Bacon","Tamarind","Tomato Sauce","Tomato","Anise"],
+                            "3": ["Olive Oil","Vermicelli","Garlic","Italian Seasoning","Milk","Vinegar","Cheese","Flattened Rice","Noodles","Wheat","Dry Grapes","Tomato","Beetroot","Oregano","Egg"],
+                            "4": ["Ground Nut","Egg","Cheese","Bread","Coconut","Onion","Milk","Garlic","Jaggery","Pepper Powder","Bacon","Tamarind","Tomato Sauce","Tomato","Anise"],
                         },
                         "Dessert":
                         {
