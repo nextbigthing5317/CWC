@@ -318,7 +318,7 @@ cards = document.querySelectorAll('.card');
         }
         data=0;
         iscomalichoosen=false;
-
+        document.getElementById("chosencomaliname2").innerHTML= "";
         var t = document.getElementById('themes');
         var theme = ["Schools","Vijay_TV","Sweet","Cartoons","Colors","Actors"]
         result = theme[Math.floor(Math.random() * theme.length)];
