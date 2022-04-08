@@ -26,112 +26,7 @@
 	<script type="text/javascript" src="./js/Winwheel.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
-<style>
-			.icon {
-  background: url('./img/media-1.jpg');
-  height: 40px;
-  width: 40px;
-  display: block;
-  /* Other styles here */
-}
-#Div2,#score,#ques,#wheel,#dishes{
-  display: none;
-}
-.qbutton[disabled] {
-          background-color: #00ff00;
-        }
 
-.item  {
- float:left;
-  width:500px;
-  height:500px;
-  border:1px solid #d8dbdf;
-  background-color:#f4f4f4;
-  border-radius:3px;
-  -webkit-border-radius:3px;
-  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-font-size: 18px;
-  text-align:center;
-  line-height:500px;
-}
-td.the_wheel
-{
-    background-image: url(./img/CUISINE.png);
-    background-position: center;
-    background-repeat: none;
-}
-
-/* Do some css reset on selected elements */
-h1, p
-{
-    margin: 0;
-}
-
-div.power_controls
-{
-    margin-right:70px;
-}
-
-div.html5_logo
-{
-    margin-left:70px;
-}
-
-/* Styles for the power selection controls */
-table.power
-{
-    background-color: #cccccc;
-    cursor: pointer;
-    border:1px solid #333333;
-}
-
-table.power th
-{
-    background-color: white;
-    cursor: default;
-}
-
-td.pw1
-{
-    background-color: #6fe8f0;
-}
-
-td.pw2
-{
-    background-color: #86ef6f;
-}
-
-td.pw3
-{
-    background-color: #ef6f6f;
-}
-
-/* Style applied to the spin button once a power has been selected */
-.clickable
-{
-    cursor: pointer;
-}
-
-/* Other misc styles */
-.margin_bottom
-{
-    margin-bottom: 5px;
-}
-button {
-    display: inline-block;
-    height: 134px;
-    padding: 0;
-    margin: 0;
-    vertical-align: top;
-    width: 104px;
-}
-
-#close-image img {
-    display: block;
-    height: 130px;  
-    width: 100px;
-}
-		</style>
 </head>
 
 <body>
@@ -153,7 +48,7 @@ button {
 
 					<!-- logo -->
 					<div class="nav-logo">
-						<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+						<a href="index" class="logo"><img src="./img/logo.png" alt=""></a>
 					</div>
 					<!-- /logo -->
 
@@ -172,33 +67,33 @@ button {
 					<!-- nav -->
 					<ul class="nav-menu">
 						<li>
-							<a href="index.html">Home</a>
+							<a href="index">Home</a>
 						</li>
 						<li class="has-dropdown">
-							<a href="cwc.html">Games</a>
+							<a href="cwc">Games</a>
 							<div class="dropdown">
 								<div class="dropdown-body">
 									<ul class="dropdown-list">
-										<li><a href="cwc.html">Cooku with Comali</a></li>
+										<li><a href="cwc">Cooku with Comali</a></li>
 									</ul>
 								</div>
 							</div>
 						</li>
 						<li class="has-dropdown">
-							<a href="category.html">Blogs</a>
+							<a href="category">Blogs</a>
 							<div class="dropdown">
 								<div class="dropdown-body">
 									<ul class="dropdown-list">
-										<li><a href="category.html?filter=tv">TV Shows</a></li>
-										<li><a href="category.html?filter=channel">Channels</a></li>
-										<li><a href="category.html?filter=serials">Serials</a></li>
-										<li><a href="category.html?filter=90kids">90's Kids </a></li>
-										<li><a href="category.html?filter=cinema">Cinema</a></li>
+										<li><a href="category?filter=tv">TV Shows</a></li>
+										<li><a href="category?filter=channel">Channels</a></li>
+										<li><a href="category?filter=serials">Serials</a></li>
+										<li><a href="category?filter=90kids">90's Kids </a></li>
+										<li><a href="category?filter=cinema">Cinema</a></li>
 									</ul>
 								</div>
 							</div>
 						</li>
-						<li><a href="about.html">About Us</a></li>
+						<li><a href="about">About Us</a></li>
 					</ul>
 					<!-- /nav -->
 				</div>
@@ -209,26 +104,26 @@ button {
 			<!-- Aside Nav -->
 			<div id="nav-aside">
 				<ul class="nav-aside-menu">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index">Home</a></li>
 					<li class="has-dropdown"><a>Games</a>
 						<ul class="dropdown">
-							<li><a href="cwc.html">Cooku with Comali</a></li>
+							<li><a href="cwc">Cooku with Comali</a></li>
 						</ul>
 					</li>
 					<li class="has-dropdown"><a>Blogs</a>
 						<ul class="dropdown">
-							<li><a href="category.html?filter=tv">TV Shows</a></li>
-							<li><a href="category.html?filter=channel">Channels</a></li>
-							<li><a href="category.html?filter=serials">Serials</a></li>
-							<li><a href="category.html?filter=90kids">90's Kids </a></li>
-							<li><a href="category.html?filter=cinema">Cinema</a></li>
+							<li><a href="category?filter=tv">TV Shows</a></li>
+							<li><a href="category?filter=channel">Channels</a></li>
+							<li><a href="category?filter=serials">Serials</a></li>
+							<li><a href="category?filter=90kids">90's Kids </a></li>
+							<li><a href="category?filter=cinema">Cinema</a></li>
 						</ul>
 					</li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="contact.html">Contacts</a></li>
-					<li><a href="privacy_policy.html">Privacy Policy</a></li>
-					<li><a href="Terms.html">Terms and Conditions</a></li>
-					<li><a href="disclaimer.html">Disclaimer</a></li>
+					<li><a href="about">About Us</a></li>
+					<li><a href="contact">Contacts</a></li>
+					<li><a href="privacy_policy">Privacy Policy</a></li>
+					<li><a href="Terms">Terms and Conditions</a></li>
+					<li><a href="disclaimer">Disclaimer</a></li>
 				</ul>
 				<button class="nav-close nav-aside-close"><span></span></button>
 			</div>
@@ -243,7 +138,7 @@ button {
 				<div class="row">
 					<div class="col-md-10">
 						<div class="post-category">
-							<a href="category.html?filter=tv">Tv Shows</a>
+							<a href="category?filter=tv">Tv Shows</a>
 						</div>
 						<h1>Unknown Facts about Tamil Bigg boss</h1>
 						<ul class="post-meta">
@@ -322,11 +217,11 @@ button {
 						</div>
 						<div class="category-widget">
 							<ul>
-								<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
-								<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
-								<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
-								<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
-								<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+								<li><a href="category?filter=tv">Tv Shows <span>3</span></a></li>
+								<li><a href="category?filter=channel">Channels <span>1</span></a></li>
+								<li><a href="category?filter=serials">Serials <span>3</span></a></li>
+								<li><a href="category?filter=90kids">90's Kids <span>2</span></a></li>
+								<li><a href="category?filter=cinema">Cinema <span>1</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -339,48 +234,48 @@ button {
 						</div>
 						<!-- post -->
 						<div class="post post-widget">
-							<a class="post-img" href="blog-post-2.html"><img src="./img/popular1.png" alt=""></a>
+							<a class="post-img" href="blog-post-2"><img src="./img/popular1.png" alt=""></a>
 							<div class="post-body">
 								<div class="post-category">
-									<a href="category.html?filter=tv">TV Shows</a>
+									<a href="category?filter=tv">TV Shows</a>
 								</div>
-								<h3 class="post-title"><a href="blog-post-2.html">Popular Tv Shows in Tamil</a></h3>
+								<h3 class="post-title"><a href="blog-post-2">Popular Tv Shows in Tamil</a></h3>
 							</div>
 						</div>
 						<!-- /post -->
 
 						<!-- post -->
 						<div class="post post-widget">
-							<a class="post-img" href="blog-post-9.html"><img src="./img/popular2.png" alt=""></a>
+							<a class="post-img" href="blog-post-9"><img src="./img/popular2.png" alt=""></a>
 							<div class="post-body">
 								<div class="post-category">
-									<a href="category.html?filter=90kids">90's Kids</a>
+									<a href="category?filter=90kids">90's Kids</a>
 								</div>
-								<h3 class="post-title"><a href="blog-post-9.html">Top 10 Tamil Shows of 90's Kids</a></h3>
+								<h3 class="post-title"><a href="blog-post-9">Top 10 Tamil Shows of 90's Kids</a></h3>
 							</div>
 						</div>
 						<!-- /post -->
 
 						<!-- post -->
 						<div class="post post-widget">
-							<a class="post-img" href="blog-post-1.html"><img src="./img/popular3.png" alt=""></a>
+							<a class="post-img" href="blog-post-1"><img src="./img/popular3.png" alt=""></a>
 							<div class="post-body">
 								<div class="post-category">
-									<a href="category.html?filter=tv">TV Shows</a>
+									<a href="category?filter=tv">TV Shows</a>
 								</div>
-								<h3 class="post-title"><a href="blog-post-1.html">Unknown Facts about Cooku With Comali</a></h3>
+								<h3 class="post-title"><a href="blog-post-1">Unknown Facts about Cooku With Comali</a></h3>
 							</div>
 						</div>
 						<!-- /post -->
 
 						<!-- post -->
 						<div class="post post-widget">
-							<a class="post-img" href="blog-post-7.html"><img src="./img/popular4.png" alt=""></a>
+							<a class="post-img" href="blog-post-7"><img src="./img/popular4.png" alt=""></a>
 							<div class="post-body">
 								<div class="post-category">
-									<a href="category.html?filter=serials">Serials</a>
+									<a href="category?filter=serials">Serials</a>
 								</div>
-								<h3 class="post-title"><a href="blog-post-7.html">Top 10 Serials on Zee TV</a></h3>
+								<h3 class="post-title"><a href="blog-post-7">Top 10 Serials on Zee TV</a></h3>
 							</div>
 						</div>
 						<!-- /post -->
@@ -412,7 +307,7 @@ button {
 			<div class="col-md-3">
 				<div class="footer-widget">
 					<div class="footer-logo">
-						<a href="index.html" class="logo"><img src="./img/footer_logo.png" style="height:80px;width: 200px;" alt=""></a>
+						<a href="index" class="logo"><img src="./img/footer_logo.png" style="height:80px;width: 200px;" alt=""></a>
 					</div>
 					<p>Your one-stop destination for television facts, games and a lot more to keep you entertained and let the fun times roll. </p>
 					<!-- <ul class="contact-social">
@@ -428,11 +323,11 @@ button {
 					<h3 class="footer-title">Categories</h3>
 					<div class="category-widget">
 						<ul>
-							<li><a href="category.html?filter=tv">Tv Shows <span>3</span></a></li>
-							<li><a href="category.html?filter=channel">Channels <span>1</span></a></li>
-							<li><a href="category.html?filter=serials">Serials <span>3</span></a></li>
-							<li><a href="category.html?filter=90kids">90's Kids <span>2</span></a></li>
-							<li><a href="category.html?filter=cinema">Cinema <span>1</span></a></li>
+							<li><a href="category?filter=tv">Tv Shows <span>3</span></a></li>
+							<li><a href="category?filter=channel">Channels <span>1</span></a></li>
+							<li><a href="category?filter=serials">Serials <span>3</span></a></li>
+							<li><a href="category?filter=90kids">90's Kids <span>2</span></a></li>
+							<li><a href="category?filter=cinema">Cinema <span>1</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -463,12 +358,12 @@ button {
 					<h3 class="footer-title">Pages</h3>
 					<div class="tags-widget">
 						<ul>
-							<li><a href="index.html">Home</a></li><br>
-							<li><a href="about.html">About Us</a></li><br>
-							<li><a href="contact.html">Contacts</a></li><br>
-							<li><a href="privacy_policy.html">Privacy Policy</a></li><br>
-							<li><a href="Terms.html">Terms</a></li><br>
-							<li><a href="disclaimer.html">Disclaimer</a></li>
+							<li><a href="index">Home</a></li><br>
+							<li><a href="about">About Us</a></li><br>
+							<li><a href="contact">Contacts</a></li><br>
+							<li><a href="privacy_policy">Privacy Policy</a></li><br>
+							<li><a href="Terms">Terms</a></li><br>
+							<li><a href="disclaimer">Disclaimer</a></li>
 						</ul>
 					</div>
 					<!-- <h3 class="footer-title">Newsletter</h3>
@@ -488,12 +383,12 @@ button {
 		<div class="footer-bottom row">
 			<div class="col-md-6 col-md-push-6">
 				<ul class="footer-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="contact.html">Contacts</a></li>
-					<li><a href="privacy_policy.html">Privacy Policy</a></li>
-					<li><a href="Terms.html">Terms</a></li>
-					<li><a href="disclaimer.html">Disclaimer</a></li>
+					<li><a href="index">Home</a></li>
+					<li><a href="about">About Us</a></li>
+					<li><a href="contact">Contacts</a></li>
+					<li><a href="privacy_policy">Privacy Policy</a></li>
+					<li><a href="Terms">Terms</a></li>
+					<li><a href="disclaimer">Disclaimer</a></li>
 				</ul>
 			</div>
 			<div class="col-md-6 col-md-pull-6">
